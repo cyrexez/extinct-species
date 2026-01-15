@@ -1,0 +1,19 @@
+[project]
+name = "species-explorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "google-genai>=1.47.0",
+    "numpy<2.0.0", # Fix: Force NumPy 1.x to avoid binary mismatch
+    "pandas>=2.2.2", # Fix: Version compatible with NumPy 1.x & 2.x
+    "pillow>=11.3.0",
+    "python-dotenv>=1.2.1",
+    "replicate>=1.0.7",
+    "requests>=2.32.5",
+    "sentence-transformers>=3.0.0",
+    "streamlit>=1.50.0",
+    "torch>=2.0.0",
+    "wikipedia>=1.4.0",
+]
